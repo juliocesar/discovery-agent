@@ -1,13 +1,3 @@
-# Right, this is a wank, pure and simple. I wrote it when I was in my early stages of learning Ruby.
-# Try it out like:
-# => $ irb -r agent.rb
-# => a = Discovery::Agent.new 'myserver', 'localhost', 9000
-# => c = Discovery::Agent.new 'myserver'
-
-# "a" is the advertiser, telling the network it's running the "myserver" service on "localhost", port 9000.
-# "c" is the client, looking for "myserver" servers. All you have to do is instance a new Agent passing the service
-# name to be looked up as a parameter
-
 require 'rubygems'
 require 'socket'
 require 'ipaddr'
